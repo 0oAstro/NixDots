@@ -1,0 +1,4 @@
+swaybg -m fill -i ~/.config/nixpkgs/modes/gnome/gnome.jpg &
+waybar -c ~/.config/nixpkgs/modes/gnome/gnome-status/config -s ~/.config/nixpkgs/modes/gnome/gnome-status/style.css &
+waybar -c ~/.config/nixpkgs/modes/gnome/dock/config-dock -s ~/.config/nixpkgs/modes/gnome/dock/style-dock.css &
+
