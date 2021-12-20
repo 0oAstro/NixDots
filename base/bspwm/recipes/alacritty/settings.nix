@@ -1,5 +1,5 @@
 let
-  clr = import /home/naruto/.config/nixpkgs/themes/rose-pine/rose-pine-moon.nix;
+  clr = import /home/naruto/.config/nixpkgs/themes/rose-pine/rose-pine.nix;
 in
   {
     env = {
@@ -19,7 +19,7 @@ in
 #### FONTS ----------------
 
   font = {
-    size = 9;
+    size = 13;
     use_thin_strokes = true;
 
     normal = {
@@ -49,33 +49,33 @@ in
   };
 
 #### COLOR SCHEME --------------
-
-  colors = {
-    # Default colors
-    primary = {
-      background = clr.background;
-      foreground = clr.foreground;
-    };
-
+colors = {
+  # Default colors
+  primary = {
+    background =  "#101415";
+    foreground =  "#c5c8c9";
+};
+  # Normal colors
   normal = {
-    black =   clr.black;
-    red =     clr.red;
-    green =   clr.green;
-    yellow =  clr.yellow;
-    blue =    clr.blue;
-    magenta = clr.magenta;
-    cyan =    clr.cyan;
-    white =   clr.white;
+    black =    "#101415";
+    red =      "#c26f6f";
+    green =    "#6bb05d";
+    yellow =   "#e59e67";
+    blue =     "#667b99";
+    magenta =  "#b185db";
+    cyan =     "#779fa8";
+    white =    "#c4c4c4";
+  };                      
+  # Bright colors       
+  bright = {            
+    black =    "#131718";
+    red =      "#f65b5b";
+    green =    "#8dc776";
+    yellow =   "#e7ac7e";
+    blue =     "#84a0c6";
+    magenta =  "#bb8fe5";
+    cyan =     "#89b8c2";
+    white =    "#cccccc";
+    };
 };
-  bright = {
-    black =   clr.black-br;
-    red =     clr.red-br;
-    green =   clr.green-br;
-    yellow =  clr.yellow-br;
-    blue =    clr.blue-br;
-    magenta = clr.magenta-br;
-    cyan =    clr.cyan-br;
-    white =   clr.white-br;
-};
-  };
 }

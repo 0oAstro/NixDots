@@ -11,7 +11,7 @@
 			# Move window
             "super + {Left,Down,Up,Right}" = "bspc node -v {-20 0,0 20,0 -20,20 0}";
 			# Terminal
-            "super + {_, shift + } Return" = "{kitty, alacritty}";
+            "super + {_, shift +} Return" = "{alacritty, kitty}";
 			# Kill current window
             "super + {_,shift + }q" = "bspc node -{c,k}";
             # Move workspaces
@@ -21,14 +21,6 @@
             "super + alt + {h,j,k,l}" = "bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}";
             # Set state
             "super + {alt + t,shift + t,space,alt + f}" = "bspc node -t {tiled,pseudo_tiled,floating,fullscreen}";
-            # Add to tabbed instance
-            "super + t; {h,j,k,l}" = "tabc $(bspc query -N -n {west,south,north,east}) add $(bspc query -N -n focused)";
-            # Remove from tabbed instance
-            "super + t; r" = ''
-            tabbed=$(bspc query -N -n focused); \
-            child=$(tabc list $tabbed | head -n1); \
-            tabc $tabbed remove $child
-            '';
             # Set window orientation
             "super + ctrl + {h,j,k,l}" = "bspc node -p {west,south,north,east}";
             # Cancel window orientation

@@ -45,10 +45,10 @@ programs.qutebrowser = {
       settings = {
         colors = {
           tabs = {
-            even.bg = clr.base01;
-            odd.bg = clr.base01;
-            selected.even.bg = clr.base02;
-            selected.odd.bg = clr.base02;
+            even.bg = "#101415";
+            odd.bg = "#131718";
+            selected.even.bg = "#131718";
+            selected.odd.bg = "#101415";
           };
         };
         fonts = {

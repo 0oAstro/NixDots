@@ -32,7 +32,7 @@
 	  "*.color7" 		= 		"#c4c4c4";
 	  "*.color15" 		= 		"#cccccc";
         "Xcursor.theme" = "volantes_light_cursors";
-        "Xcursor.size"  = 64;
+        "Xcursor.size"  = 12;
     };
  };
 }
