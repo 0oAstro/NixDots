@@ -1,4 +1,0 @@
-swaybg -m fill -i ~/.config/nixpkgs/modes/mac-os/mac.jpg &
-waybar -c ~/.config/nixpkgs/modes/mac-os/dock/config-dock -s ~/.config/nixpkgs/modes/mac-os/dock/style-dock.css &
-waybar -c ~/.config/nixpkgs/modes/mac-os/finder/config -s ~/.config/nixpkgs/modes/mac-os/finder/style.css &
-

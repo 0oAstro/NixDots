@@ -1,3 +1,0 @@
-swaybg -m fill -i ~/.config/nixpkgs/modes/custom/anime.png &
-waybar -c ~/.config/nixpkgs/modes/custom/modules/config -s ~/.config/nixpkgs/modes/custom/modules/style.css &
-
